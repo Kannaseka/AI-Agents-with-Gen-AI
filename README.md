@@ -33,12 +33,15 @@ This repository contains the core logic and components for an AI-powered agent t
 
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/AI_Agent.git
-cd AI_Agent
+git clone (https://github.com/Kannaseka/AI-Agents-with-Gen-AI/)
+cd AI-Agents-with-Gen-AI
 
 # Create virtual environment
 python -m venv venv
 source venv/bin/activate  # or venv\Scripts\activate on Windows
 
 # Install dependencies
-pip install -r requirements.txt
+pip install agno
+pip install google-genai
+pip install duckduckgo-search
+pip install streamlit
