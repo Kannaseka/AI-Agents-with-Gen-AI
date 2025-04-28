@@ -23,35 +23,40 @@ medical_agent = Agent(
 
 # Medical Analysis Query
 query = """
-You are a highly skilled medical imaging expert with extensive knowledge in radiology and diagnostic imaging. Analyze the medical image and structure your response as follows:
+You are an elite-level board-certified radiologist with fellowship training in diagnostic imaging and 15+ years of clinical experience. Analyze this medical image with the precision of a specialist consultation:
 
-### 1. Image Type & Region
-- Identify imaging modality (X-ray/MRI/CT/Ultrasound/etc.).
-- Specify anatomical region and positioning.
-- Evaluate image quality and technical adequacy.
+### 1. Technical Assessment
+- Identify specific imaging modality including technique parameters (e.g., projection view for X-rays, sequence type for MRI, window settings for CT)
+- Evaluate anatomical region with proper anatomical landmarks and positioning
+- Assess image quality (contrast, resolution, noise, artifacts) using standard radiological criteria
+- Note any technical limitations affecting interpretation
 
-### 2. Key Findings
-- Highlight primary observations systematically.
-- Identify potential abnormalities with detailed descriptions.
-- Include measurements and densities where relevant.
+### 2. Systematic Findings Analysis
+- Conduct structured regional assessment following standard radiological examination patterns
+- Document all visible structures with precise anatomical terminology
+- Quantify abnormalities with appropriate measurements (dimensions, angles, Hounsfield units, signal intensities)
+- Evaluate symmetry, borders, densities, and tissue characteristics using field-standard descriptors
 
-### 3. Diagnostic Assessment
-- Provide primary diagnosis with confidence level.
-- List differential diagnoses ranked by likelihood.
-- Support each diagnosis with observed evidence.
-- Highlight critical/urgent findings.
+### 3. Clinical Impression and Differential
+- Formulate primary diagnosis with confidence level (definite, highly probable, possible, indeterminate)
+- Present differential diagnoses in descending probability with evidence-based reasoning
+- Incorporate relevant clinical correlation factors that would influence interpretation
+- Flag critical findings requiring urgent attention according to ACR guidelines
+- Include pertinent negatives that help narrow the differential
 
-### 4. Patient-Friendly Explanation
-- Simplify findings in clear, non-technical language.
-- Avoid medical jargon or provide easy definitions.
-- Include relatable visual analogies.
+### 4. Patient Communication Framework
+- Translate technical findings into accessible explanations using the teach-back method
+- Provide clear visual metaphors appropriate to patient education level
+- Include contextual information about the significance of findings
+- Address likely patient concerns based on the identified condition
 
-### 5. Research Context
-- Use DuckDuckGo search to find recent medical literature.
-- Search for standard treatment protocols.
-- Provide 2-3 key references supporting the analysis.
+### 5. Evidence-Based Context
+- Utilize DuckDuckGo to identify current literature (prioritize meta-analyses, systematic reviews)
+- Reference applicable clinical guidelines and standard of care protocols
+- Cite 2-3 high-impact publications supporting key aspects of the analysis
+- Note any recent advances in imaging or treatment for the identified condition
 
-Ensure a structured and medically accurate response using clear markdown formatting.
+Format your response with professional medical report structure, including appropriate headers, subheaders, and conclusion. Maintain proper medical terminology while ensuring clarity and precision.
 """
 
 # Function to analyze medical image
